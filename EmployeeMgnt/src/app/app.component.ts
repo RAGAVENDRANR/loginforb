@@ -11,23 +11,13 @@ export class AppComponent {
   loginform = new FormGroup({
     username: new FormControl('', [Validators.required]),
     password: new FormControl('', [Validators.required ,Validators.minLength(6)]),
-    // cpassword: new FormControl('', [Validators.required,Validators.minLength(6)]),
   });
-  // Submit() {
-  //   console.log(
-  //     'USERNAME :  ' +
-  //       this.loginform.controls['username'].value +
-  //       ' ' +
-  //       'PASSWORD : ' +
-  //       this.loginform.controls['password'].value
-  //   );
-    // alert(
-    //   'USERNAME :  ' +
-    //     this.loginform.controls['username'].value + " "+" && "+
-    //     "Form submitted Sucessfully"
-    // );
+    Submit() {
+      alert(
+       'USERNAME :  ' +
+         this.loginform.controls['username'].value + " "+" && "+
+         "Form submitted Sucessfully"
+     );
+     this.loginform.reset()
   }
-  // reseter() {
-  //   this.loginform.reset();
-  // }
-
+  }

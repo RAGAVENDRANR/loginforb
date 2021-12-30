@@ -20,14 +20,4 @@
         >*PASSWORD IS REQUIRED && *Minimum 6 Characters is Required</span
       ></label
     >
-    <!-- <label
-      ><input class="ip" type="password" formControlName="cpassword" placeholder="CONFIRM THE PASSWORD"/>
-      <span
-        class="er"
-        *ngIf="
-          loginform.get('cpassword')?.invalid && loginform.get('cpassword')?.touched
-        "
-        >*PASSWORD IS REQUIRED && *Minimum 6 Characters is Required</span
-      ></label
-    ><br /> -->
-    <button  class="button" type="submit">Submit</button>
+    <button  class="button" type="submit" (click)="Submit()">Submit</button>
